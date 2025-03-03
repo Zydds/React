@@ -1,7 +1,8 @@
 
+
 const FaqPage = () => {
   return (
-    <div>FaqPage</div>
+    <div>.</div>
   )
 }
 
