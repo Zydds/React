@@ -1,0 +1,146 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #cc5d12;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+  }
+
+
+  /* Style Navigation Bar */
+.navbar {
+    position: fixed;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    transition: all 0.2 ease;
+    -webkit-transition: all 0.2 ease;
+    -moz-transition: all 0.2 ease;
+    -ms-transition: all 0.2 ease;
+    -o-transition: all 0.2 ease;
+    z-index: 9999;
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+  }
+
+.navbar.color-active {
+    background-color: var(--navbar-color);
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid #ffae0091 ;
+}
+
+.navbar .nav-link a{
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--navbar-color-text);
+}
+
+.navbar .nav-link a:hover{
+    color: var(--secondary-color)
+}
+
+.navbar .nav-link .active {
+    background-color: var(--secondary-color);
+    color : var(--primary-color);
+}
+
+.navbar .nav-link .active:hover {
+    color : var(--navbar-color)
+}
+/* Style Navigation Bar */
+
+/* Style HomePage Header */
+header {
+    background: #c6ffdd;
+    background: -webkit-linear-gradient(to left, #ffa530, #fbd786, #fdfdfd);
+    background: linear-gradient(to left, #f7cf79, #fbd786, #ffffff);
+}
+
+.homepage .header-box h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.homepage .header-box h1 span {
+    font-weight: 700;
+}
+
+.homepage .header-box p{
+    line-height: 2;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.homepage .header-box img {
+    width: 90%;
+    padding-left: 200px;
+    /* size: 70%; */
+}
+
+/* buat display under 992px */
+@media screen and (max-width: 992px) {
+    .homepage .header-box {
+        padding-top: 8rem;
+    }
+
+    .homepage .header-box img {
+        width: 400px;
+        display: block;
+        margin-inline: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .homepage .header-box h1{
+        font-size: 3rem;
+    } 
+}
+
+@media screen and (max-width: 475px) {
+    .homepage .header-box h1{
+        font-size: 2.4rem;
+    }
+    .homepage .header-box p{
+        font-size: 14px;
+    }
+
+    .homepage .header-box img {
+        width: 300px;
+    }  
+}
+
+@media screen and (max-width: 375px) {
+    .homepage .header-box h1{
+        font-size: 2rem;
+    }
+    .homepage .header-box p{
+        font-size: 12px;
+    }
+}
+/* Style HomePage Header*/
+
+/* Style Resep */
+.homepage .kelas {
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.homepage .kelas .row:nth-child(1) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.homepage .kelas .row:nth-child(1) h1,
+.homepage .kelas .row:nth-child(1) p
+{
+    color: var(--color-text);
+}
+
+/* Style Resep */
+
+  
